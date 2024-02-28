@@ -1,0 +1,168 @@
+/* commoncss */
+* {
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+.btn-primary{
+  border-radius: 7px;
+  background-color: #ff900d;
+  color: #FFFFFF;
+  padding: 20px 25px;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+.common-title{
+  color:#131313;
+font-size:35px;
+ font-weight: 700;
+}
+
+/* header */
+header{
+  background-color: rgba(255, 144, 13, 0.102);
+  padding: 50px 240px;
+}
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav> ul{
+  display: flex;
+}
+nav li{
+  list-style: none;
+  margin-right: 50px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #424242;
+}
+nav li a{
+ text-decoration: none;
+}
+/* banner part */
+.banner-content{
+  max-width: 852px;
+  text-align: center;
+  margin: 0 auto;
+}
+.banner-title{
+  color:#131313;
+font-size:54px;
+font-weight: 700;
+margin-bottom: 1.75rem;
+}
+.banner-description{
+  color:#727272;
+  margin-bottom: 1.75rem;
+}
+.banner-img{
+  margin-top: 30px;
+  width: 100%;
+ 
+}
+/* responsive styles */
+
+/* main styles */
+ main{
+   max-width: 75%;
+   margin: 70px auto;
+ }
+ .team-section{
+    display: flex;
+    align-items: center;
+  } 
+  .imgteam{
+    width: 100%;
+  }
+.team-container{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.625rem;
+  }
+
+.team-content{
+  padding-left: 60px;
+  padding-right: 67px;
+  width: 33.563rem;
+  }
+  .team-title{
+    font-size: 2.813rem;
+    margin: 0;
+  }
+  .team-description{
+  font-size: 1rem;
+  color:#727272;
+  margin: 18px 0 18px 0;
+}
+.Quicklist{
+  color: #727272;
+  font-weight: 500;
+}
+.Features{
+  color: #FF900E;
+  font-weight: 700;
+}
+/* fact section */
+.card-container {
+  display: flex;
+  justify-content: space-around;
+}
+.card-container .card{
+  border-radius:8px;
+border:1px solid #ff900d;
+text-align: center;
+padding: 30px;
+}
+.cardtitle{
+  font-size: 2.8rem;
+  color: #424242;
+  font-weight: 600;
+  margin: 6px 0px;
+}
+.carddescription{
+  font-size: 1.25rem;
+  color: #727272;
+  margin: 0px;
+}
+
+/* mobile devices */
+@media screen and (max-width:576px) {
+  header{
+      padding: 20px;
+  }
+  nav,
+  .team-section
+  {
+     flex-direction: column;
+  }
+  .team-container{
+    grid-template-columns: 1fr;
+  }
+  .team-content{
+    padding: 15px 0px;
+    width: 17.563rem;
+    }
+}
+
+/* tablet or medium devices */
+
+@media screen and (min-width:576px) and (max-width:960px) {
+  header{
+    padding: 50px;
+  }
+  nav,
+  .team-section
+  {
+    flex-direction: column;
+  }
+  .team-container{
+    grid-template-columns: 1fr;
+  }
+  .team-content{
+    padding: 30px ;
+    }
+}
